@@ -4,18 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>МИР и немного воздуха</title>
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header id="header" class="fixed-top">
-        <nav class="bar-style bar bar-expand">
+        <nav class="bar-style bar bar-expand" style="background-color: black;">
             <section class="blok">
                 <a href="#" class="brand">Здесь будет лого</a>
-                <button class="toggler" type="button" data-toggle="collapse" data-taget="#navContent">
+                <button class="toggler" type="button" data-toggle="collapse" data-taget="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="toggler-icon">
 
                     </span>
                 </button>
+                <div class="collapse bar-collapse" id="navContet">
+                    <ul class="navbar mr-auto mb-3 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Домой</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Блог</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Об этом</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="navDrop" role="button" data-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                            <ul class="dropdown-menu" aria-labelledby="navDrop">
+                                <li> <a href="" class="dropdown-item">Drop1</a></li>
+                                <li> <a href="" class="dropdown-item">Drop2</a></li>
+                                <li> <a href="" class="dropdown-item">Drop3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form action="#" class="d-flex">
+                        input
+                    </form>
+                </div>
             </section>
         </nav>
         <h1>Это только начало!</h1>
